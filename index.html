@@ -10,10 +10,58 @@
     <body>
         
         <div class="app-wrapper">
-            <div class="app-header"></div>
-            <div class="app-content">
-                
-                <nav class="app-nav">
+            <div class="app-header">
+             <header class="app-header blue-dark">
+                <section class="app-nav-header">
+                    <div class="app-nav-container">
+                        <div class="app-branding">
+                            <a class="app-title" href="">
+                                <h1>
+                                    <em>product</em>
+                                    <span class="normal">name</span>
+                                </h1>
+                            </a>
+                        </div>
+                        <ul class="app-user-controls">
+                            <li class="dropdown dropdown-app-switcher">
+                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="glyphicons glyphicons-show-thumbnails x1"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="active">
+                                        <a>Dropdown Item Active</a>
+                                    </li>
+                                    <li>
+                                        <a>Dropdown Item</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown dropdown-user">
+                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                    <div class="username-info">
+                                        <div class="username">Username</div>
+                                            <div class="sub-info">Context Name</div>
+                                    </div>
+                            <div class="profile-picture">
+                                <span class="glyphicons glyphicons-user"></span>
+                            </div>
+                                </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a>User Dropdown Item</a>
+                            </li>
+                            <li>
+                                <a>User Dropdown Item</a>
+                            </li>
+                        </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                 
+                 <!--NAVIGATION BAR-->
+                  <nav class="app-nav">
                     <ul class="nav-tabs">
                         <li class="active">
                             <a href="#">Quick Lookup</a>
@@ -26,62 +74,66 @@
                         </li>
                     </ul>
                 </nav>
+                <!--END OF NAVIGATION BAR-->
+            </header><!--end up header-->
+            
+            </div>
+            <div class="app-content">
                 
                 <h1>Quick Lookup</h1>
                 
-                
-              <div class="grid-full">
-                  <div class="col-md-6">
-                
-                    <article class="panel panel-default">
-
-                <ul class="input-list">
-                    <li class="input-unit">
-                        <label class="input-label">Last Name</label>
-                        <div class="input-control">
-                            <input class="input-element input-element-base" type="text" />
-                        </div>
-                    </li>
-                    
-                    <li class="input-unit">
-                        <label class="input-label">First Name</label>
-                        <div class="input-control">
-                            <input class="input-element input-element-base" type="text" />
-                        </div>
-                    </li>
-                    
-                    <li class="input-unit">
-                        <label class="input-label">Email</label>
-                        <div class="input-control">
-                            <input class="input-element input-element-base" type="text" />
-                        </div>
-                    </li>
-                    
-                    
-                    <li class="input-unit">
-                        <label class="input-label">Phone</label>
-                        <div class="input-control">
-                            <input class="input-element input-element-base" type="text" />
-                        </div>
-                    </li>
-                    
-                    <div class="clear"> <!--clear all btn position-->
-                        <button class="btn btn-secondary">Clear All</button>
-                    </div>
-                    
-                    <div class="filter"><!--filter btn position-->
-                        <button class="btn btn-blue">Filter</button>
-                    </div>
-                        
-                        </ul>
-                      
-                  </div>
-                      </article>
-                
-                
-          <div class="col-md-18">
-
+                <div class="grid-full">
+                  <div class="col-md-6"> <!--first col-->
                 <article class="panel panel-default">
+                        <header class="panel-header no-border">
+                            <h2 class="panel-title">Filters</h2>
+                        </header>
+                        <section class="panel-content">
+                            <ul class="input-list">
+                                <li class="input-unit">
+                                    <label class="input-label">Last Name</label>
+                                    <div class="input-control">
+                                        <input class="input-element input-element-base" type="text" />
+                                    </div>
+                                </li>
+                            </ul>
+                                
+                            <ul class="input-list">
+                                <li class="input-unit">
+                                    <label class="input-label">First Name</label>
+                                    <div class="input-control">
+                                        <input class="input-element input-element-base" type="text" />
+                                    </div>
+                                </li>
+                            
+                            <ul class="input-list">
+                                <li class="input-unit">
+                                    <label class="input-label">Email</label>
+                                    <div class="input-control">
+                                        <input class="input-element input-element-base" type="text" />
+                                    </div>
+                                </li> 
+                                </ul>
+                                  
+                            <ul class="input-list">
+                                <li class="input-unit">
+                                    <label class="input-label">Phone</label>
+                                    <div class="input-control">
+                                        <input class="input-element input-element-base" type="text" />
+                                    </div>
+                                </li>
+                            </ul>
+                                </section>
+                        <footer class="panel-footer">
+                            <div class="panel-buttons">
+                                <button class="btn">Clear All</button>
+                                <button class="btn btn-blue">Filter</button>
+                            </div>
+                        </footer>
+                      </article>
+                                
+                  <div class="col-md-18">
+                    <article class="panel panel-default">
                     <header class="panel-header no-border">
                         <h2 class="panel-title">Results</h2>
                     </header>
@@ -155,69 +207,8 @@
                     </section>
                 </article>
                 </div>
+            </div> <!--end of col_wrapper-->
             </div>
-                    
-             
-                
-                
-            
-            
-            <header class="app-header blue-dark">
-                <section class="app-nav-header">
-                    <div class="app-nav-container">
-                        <div class="app-branding">
-                            <a class="app-title" href="">
-                                <h1>
-                                    <em>product</em>
-                                    <span class="normal">name</span>
-                                </h1>
-                            </a>
-                        </div>
-                        <ul class="app-user-controls">
-                            <li class="dropdown dropdown-app-switcher">
-                                <a class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="glyphicons glyphicons-show-thumbnails x1"></span>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li class="active">
-                                        <a>Dropdown Item Active</a>
-                                    </li>
-                                    <li>
-                                        <a>Dropdown Item</a>
-                                    </li>
-                                </ul>
-                            </li>
-    <li class="dropdown dropdown-user">
-        <a class="dropdown-toggle" data-toggle="dropdown">
-            <div class="username-info">
-                <div class="username">Username</div>
-                <div class="sub-info">Context Name</div>
-            </div>
-            <div class="profile-picture">
-                <span class="glyphicons glyphicons-user"></span>
-            </div>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-right">
-            <li>
-                <a>User Dropdown Item</a>
-            </li>
-            <li>
-                <a>User Dropdown Item</a>
-            </li>
-        </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </header><!--end up header-->
-            
-            
-            
-            
-            
-        
-        
-        
             </div>
         </div>
     </body>
