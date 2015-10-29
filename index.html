@@ -91,40 +91,42 @@
                             <h2 class="panel-title">Filters</h2>
                         </header>
                         <section class="panel-content">
-                            <ul class="input-list">
-                                <li class="input-unit">
-                                    <label class="input-label">Last Name</label>
-                                    <div class="input-control">
-                                        <input class="input-element input-element-base" type="text" />
-                                    </div>
-                                </li>
-                            </ul>
-                                
-                            <ul class="input-list">
-                                <li class="input-unit">
-                                    <label class="input-label">First Name</label>
-                                    <div class="input-control">
-                                        <input class="input-element input-element-base" type="text" />
-                                    </div>
-                                </li>
-                            
-                            <ul class="input-list">
-                                <li class="input-unit">
-                                    <label class="input-label">Email</label>
-                                    <div class="input-control">
-                                        <input class="input-element input-element-base" type="text" />
-                                    </div>
-                                </li> 
+                            <form name="filterForm" method="POST">
+                                <ul class="input-list">
+                                    <li class="input-unit">
+                                        <label class="input-label">Last Name</label>
+                                        <div class="input-control">
+                                            <input class="input-element input-element-base" type="text" name="firstName" />
+                                        </div>
+                                    </li>
                                 </ul>
-                                  
-                            <ul class="input-list">
-                                <li class="input-unit">
-                                    <label class="input-label">Phone</label>
-                                    <div class="input-control">
-                                        <input class="input-element input-element-base" type="text" />
-                                    </div>
-                                </li>
-                            </ul>
+                                    
+                                <ul class="input-list">
+                                    <li class="input-unit">
+                                        <label class="input-label">First Name</label>
+                                        <div class="input-control">
+                                            <input class="input-element input-element-base" type="text" name="lastName" />
+                                        </div>
+                                    </li>
+                                
+                                <ul class="input-list">
+                                    <li class="input-unit">
+                                        <label class="input-label">Email</label>
+                                        <div class="input-control">
+                                            <input class="input-element input-element-base" type="text" />
+                                        </div>
+                                    </li> 
+                                    </ul>
+                                      
+                                <ul class="input-list">
+                                    <li class="input-unit">
+                                        <label class="input-label">Phone</label>
+                                        <div class="input-control">
+                                            <input class="input-element input-element-base" type="text" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
                                 </section>
                         <footer class="panel-footer">
                             <div class="panel-buttons">
